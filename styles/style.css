@@ -1,0 +1,138 @@
+:root{
+    --darker-gray: rgb(26, 26, 26);
+    --navbar-gray: rgb(41, 41, 41);
+    --medium-gray: rgb(51, 51, 51);
+    --lighter-gray: rgb(115, 115, 115);
+    --personal-gray: rgb(149, 157, 157);   
+}
+
+*{
+    font-family: 'Changa', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    height: 4em;
+    color: #fff;
+    align-content: center;
+}
+
+.title{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+.graphical{
+    background-image: url(../src/background.jpg);
+    object-fit: cover;
+    padding: 2em;
+}
+
+.img-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+   width: 200px;
+   height: 200px;
+   object-fit: cover;  
+}
+
+.personal-info{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--personal-gray);
+    padding: 2em;
+    justify-content: space-around;
+}
+
+.personal-info__title{
+    color: var(--darker-gray);
+    width: 100%;
+}
+
+.personal-info__container{
+    min-width: 350px;
+    color: var(--lighter-gray);
+}
+
+.personal-info__container p{
+    color: var(--darker-gray);
+}
+
+.personal-info__contact a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.about{
+    padding: 2em;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--medium-gray);
+    color: var(--lighter-gray);
+    padding: 2em;
+}
+
+.skills__container{
+    min-width: 150px;
+}
+
+
+.skills h2{
+    color: #fff;
+}
+
+.skills i{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.skills h3{
+    color: #fff;
+    font-size: 20px;
+}
+
+.skills h4{
+    display: inline;    
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li{
+    margin: 0.5em;
+    padding: 0px;
+}
+
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--navbar-gray);
+    color: #fff;
+    padding: 2em;
+}
+
+.experience h2{
+    color: #fff;
+}
+.experience__container{
+    min-width: 150px;
+    max-width: 400px;
+}
